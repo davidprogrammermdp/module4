@@ -27,7 +27,7 @@ section{
     background-image: url(img/bgCOMMENTS.png);
 }
 .main-block, .about-block, .skills-block, 
-.work-block, .comments-block{
+.works-block, .comments-block{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,5 +97,92 @@ section{
         transform: translateY(-150px);
     }
 }
+.title{
+    text-align: center;
+    font-size: 80px;
+    padding-top :100px;
+    color: #ffff;
+    text-shadow: 5px 5px 0 #000;
+}
+.about-content{
+    width: 45%;
+    height: 270px;
+    padding: 40px;
+    background-color: #792aff;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
 
+}
+.about-title{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.about-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+.about-card p{
+    color: #fff;
+    font-size: 18px;
+    margin-left: 20px;
+    display: flex;
+    align-items: left;
+    margin-left: 20px;
 
+}
+.about-card img{
+    margin-bottom: 20px;
+    width: 300px;
+}
+.skills-card{
+    background-image: url(img/form3.png);
+    height: 450px;
+    width: auto;
+    margin: 20px;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills-card p{
+    color: #000;
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 500px;
+}
+@keyframes moving-planet{
+    from{
+        transform:translateY(0px);
+    }
+    to{
+        transform: translateY(-150px);
+    }
+}
+.moving-planet{
+    background-image: url(img/moving-planet.png);
+    width: 200px;
+    height: 230px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background-repeat: no-repeat;
+    animation-name: moving-planet;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse;
+}
+.works-block img{
+    width: 27%;
+    margin: 0px 20px;
+    box-shadow: 7px 7px 0 #000 ;
+}
