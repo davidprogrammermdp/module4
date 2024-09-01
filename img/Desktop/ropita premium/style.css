@@ -1,0 +1,75 @@
+*{
+    background-color: rgb(255, 252, 220);
+    scroll-behavior: smooth;
+}
+.intro{
+  margin-bottom: 200px;
+}
+.subtitle{
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  li {
+    display: inline;
+    text-decoration: none;
+  }
+  li a {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 35px;
+  }
+  .logo{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 300px;
+  }
+  .cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  .card{
+    border: 3px solid #222222;
+    border-radius: 20px;
+    padding: 30px 20px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    background-color: aliceblue;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .card p{
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .брюки{
+    text-align: center;
+    font-size: 45px;
+  }
+  .футболки{
+    text-align: center;
+    font-size: 45px;
+  }
+  .рубашки{
+    text-align: center;
+    font-size: 45px;
+  }
+  .свитера{
+    text-align: center;
+    font-size: 45px;
+  }
+  .кроссовки{
+    text-align: center;
+    font-size: 45px;
+  }

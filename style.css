@@ -3,12 +3,7 @@
     margin: 0;
     /* font-family: "Inter", sans-serif; */
     font-family: "Comfortaa", sans-serif;
-}
-* p {
-    color: #fff;
-}
-*{
-    color: #fff;
+    scroll-behavior: smooth;
 }
 #main{
     background-image: url('img/bgMAIN.png');
@@ -143,7 +138,7 @@ section{
 }
 .about-card img{
     margin-bottom: 20px;
-    width: 300px;
+    width: 190px;
 }
 .skills-card{
     background-image: url(img/form3.png);
@@ -194,32 +189,109 @@ section{
 }
 .comments-block{
     max-width: 1150px;
-    display: flex;
-    align-items: center;
+    margin: auto;
 }
-.comment-card h3{
+.comments-card h3{
     font-size: 18px;
     padding: 10px; 
+}
+.comments-card{
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/card.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .comment p{
     font-size: 18px;
     padding: 10px 20px;
     text-align: center;
+    max-width: 250px;
+
+
+}
+.comment{
+    width: 325px;
+    height: 161px;
+    background-image: url(img/comment.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    box-shadow: 4px 4px  2px yellow ;
+    border-radius: 10px;
 }
 footer{
     background-color: #222d5b;
-    height: 200px;
+}
+.main-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    height: 100px;
+    align-items: center;
+}
+.copyright{
+color: #fff;
+display: flex;
 
 }
-.David{
-    text-align: left;
+.main-footer p{
     color: #fff;
-    font-size: 20px;
 }
 .footer-img{
-    background-repeat: no-repeat;
     display: flex;
-    justify-content: right;
-    display: inline;
-    text-align: right;
+    justify-content: space-between;
 }
+nav{
+    position: fixed;
+    width:80% ;
+    z-index: 10;
+    top:0;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.fixed-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.nav-link{
+    text-decoration: none;
+    color: #000;
+    width: 132px;
+    height: 40px;
+    border-radius: 12px;
+    border: 2px solid black;
+    font-size: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
