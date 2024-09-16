@@ -309,14 +309,96 @@ nav{
 .active{
     background-color: #bbff2c;
 }
+.hide{
+    display: none;
 
+}
+.mobile-button{
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    width: 40px;
+    right: 20px;
+}
 
+@media(max-width:1000px){
+    .nav-links{
+        display: none;
+    }
+    .logo{
+        font-size: 40px;
+        padding-top: 10px;
+        margin-left: 0;
+    }
+    .main-content{
+        max-width: 380px;
+    }
+    .main-title{
+        font-size: 30px;
+        padding-top: 30px;
+    }
+    .button{
+        width: 140px;
+        height: 40px;
+    }
+    .title{
+        font-size: 40px;
+        padding-top: 30px;
+    }
+    .moving-planet, .moving-planet2{
+        display: none;
+    }
+    .about-content{
+        padding: 10px;
+        height: auto;
+        flex-direction: column;
+    }
+    .about-card{
+        order: -1;
+    }
+    .about-text{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .about-content .button{
+        margin: auto;
+    }
+    .works-block{
+        flex-direction: column;
+    }
+    .works-block img{
+        width: 75%;
+        margin: 15px 0;
+    }
+    .comments-block{
+        flex-direction: column;
+    }
+    .comment{
+        background-image: url('img/comment-mobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 20px 0;
+        width: 300px;
+        height: 110px;
+    }
+    .comments-card p{
+        text-align: center;
+    }
+    .mobile-button{
+        display: block;
 
+    }
+    .mobile-menu{
+        position: absolute;
+        top: 0px;
+        z-index: -1;
+        width: 100%;
+        background-color: #200153 ;
+        min-height: 100vh;
+    }
+    nav{
+        width: 100%;
+        margin: 0;
 
-
-
-
-
-
-
-
+    }
+}
