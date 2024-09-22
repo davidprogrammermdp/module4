@@ -5,7 +5,20 @@ menu.addEventListener('click', function(event){
     if (clicktarget.classList.contains('nav-link')){
         activebtn.classList.remove('active')
         clicktarget.classList.add('active')
+        let mobile = document.querySelector('.mobile-menu')
+        if(!mobile.classList.contains('hide')){
+            mobile.classList.add('hide')
+        }
     }
+    let body=document.querySelector('body')
+    let mobilemenu=document.querySelector('.mobile-menu')
+    if (!body.classList.contains('off-scroll') &&
+        !mobilemenu.classList.contains('hide')){
+            body.classList.add('off-scroll')
+        }
+        else{
+            body.classList.remove('off-scroll') 
+        }
 })
 let classLink = '.main-link'
 window.onscroll=function(){
@@ -32,6 +45,9 @@ window.onscroll=function(){
         activebtn.classList.remove('active')
     }
 };
-document.querySelector('.mobile-button').addEventListener('click', function(event){
+document.querySelector('.mobile-img').addEventListener('click', function(event){
     document.querySelector('.mobile-menu').classList.toggle('hide')
+    document.querySelector('.mobile-menu').classList.contains('hide')
 })
+
+

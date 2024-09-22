@@ -315,12 +315,10 @@ nav{
 }
 .mobile-button{
     display: none;
-    position: absolute;
-    padding-top: 10px;
-    width: 40px;
-    right: 20px;
 }
-
+.offscroll{
+    overflow: hidden;
+}
 @media(max-width:1000px){
     .nav-links{
         display: none;
@@ -400,5 +398,27 @@ nav{
         width: 100%;
         margin: 0;
 
+    }
+    .mobile-button{
+        display: block;
+        position: absolute;
+        padding-top: 10px;
+        width: 40px;
+        right: 20px;
+    }
+    .mobile-menu{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile-nav-links .nav-link{
+        margin-bottom: 30px;
+        width: 210px;
+        height: 50px;
+    }
+    .hide{
+        display: none;
     }
 }
